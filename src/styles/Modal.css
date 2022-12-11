@@ -1,0 +1,76 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.isOpen {
+  display: flex;
+}
+
+.modal-container {
+  position: relative;
+  min-width: 30rem;
+  max-width: 48rem;
+  min-height: 15rem;
+  max-height: 48rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  font-size: 1.375rem;
+  color: #f00;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.clear-title {
+  font-size: 1.5rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #11175e;
+}
+
+.clear-btn {
+  width: 150px;
+  height: 40px;
+  margin: 1rem 0.625rem 0rem 0rem;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.9375rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.clear-btn:nth-child(1) {
+  background-color: #ff4444;
+  color: #fff;
+}
+
+@media only screen and (max-width: 31.25rem) {
+  .modal-container {
+    min-width: 4rem;
+    min-height: 15rem;
+    padding: 1.5rem;
+  }
+}
