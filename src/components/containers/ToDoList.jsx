@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AddToDo from "../AddToDo";
 import ClearToDo from "../ClearToDo";
 import "../../styles/ToDoStyles.css";
-import ToDo from "../ToDo";
+import Task from "../Task";
 
 const ToDoList = () => {
   const [taskList, setTaskList] = useState([]);
